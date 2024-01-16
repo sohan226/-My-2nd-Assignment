@@ -6,52 +6,53 @@
 }
 
 /* nav section */
-/* .nav-section{
+.nav-section{
     display: flex;
     justify-content: space-between;
     max-width: 1440px;
     margin: 52px 135px;
-} */
+}
 
-/* .nav-title{
+.nav-title{
     width: 50%;
     display: flex;
     align-items: center;
     gap: 10px;
-} */
+}
 
-/* .nav-title h1{
+.nav-title h1{
     color: #131318;
     font-size: 36px;
     font-weight: 800;
-} */
+}
 
-/* #nav-span{
+#nav-span{
     color: #FF5400;;
-} */
+}
 
-/* .nav-content{
+.nav-content{
     width: 50%;
     display: flex;
     align-items: center;
-} */
+}
 
-/* .nav-content a{
+.nav-content a{
     text-decoration: none;
     margin-left: 59px;
-    display: block;
+    /* display: block; */
     color: #424247;
     font-size: 18px;
     font-weight: 400;
-} */
+}
 
-/* #home{
+#home{
     color: #FF5400;
     font-weight: 700;
-} */
-/* #icon{
+}
+
+.nav-section .nav-icon{
     display: none;
-}  */
+} 
 
 /* banner section  */
 .banner-section{
@@ -134,6 +135,12 @@ button{
 } 
 .populer-text-container button{
     margin-top: 35px;
+}
+.primary-btn{
+    width: 175px;
+    padding: 14px 35px;
+    font-size: 20px;
+    font-weight: 800;
 }
 .populer-img-container{
     width: 50%;
@@ -386,17 +393,46 @@ hr{
 #copyright{
     color: #131318;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 300;
     padding-bottom: 110px;
 }
 
+
+
 /* responsive section */
 
 @media screen and (max-width: 600px) {
+    *{margin: 0;}
+
+    .nav-section{
+        margin: 0;
+        padding:15px 20px ;
+    }
+    
+    .nav-content a{
+        display: none;
+    }
+    .nav-content a.nav-icon{
+        display: block;
+        margin-left: 190px;
+        padding-right: 10px;
+    }
+    .fa-solid {
+        font-size:24px;
+    }
+    .nav-title{
+        width: 100%;
+    }
+    .nav-title img{
+        width: 35px;
+    }
+    .nav-title h1{
+        font-size: 21px;
+    }
     .banner-section{
         max-width: 380px;
-        margin: 64px auto;
+        margin: 17px auto;
         padding: 32px 15px;
     }
     .banner-section-content{
@@ -437,6 +473,9 @@ hr{
     }
     .populer-img-container img{
         width: 100%;
+    }
+    .populer-text-container h1{
+        font-size: 22px;
     }
 
     /* destination section */
@@ -490,6 +529,7 @@ hr{
         margin: 0;
         padding: 15px 20px;
         flex-direction: column;
+        /* margin-bottom: 0; */
     }
     .subscribe{
         width: 89%;
@@ -520,6 +560,7 @@ hr{
 
     /* footer section */
     .footer-section{
+        margin-top: 0;
         padding-left: 44px;
         padding-right: 44px;
     }
@@ -529,6 +570,9 @@ hr{
     }
     .footer-title h1{
         font-size: 22px;
+    }
+    .footer-title img{
+        width: 45px;
     }
 
     .footer-description{
