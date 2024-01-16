@@ -375,6 +375,23 @@ hr{
     margin-top: 15px;
     margin-bottom: 32px;
 }
+#footer-hr{
+    width: 872px;
+    margin: 50px auto;
+}
+.fa-brands{
+    font-size: 25px;
+    margin-right: 30px;
+}
+#copyright{
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 110px;
+}
+
+/* responsive section */
 
 @media screen and (max-width: 600px) {
     .banner-section{
@@ -499,5 +516,33 @@ hr{
         margin: 0;
         left: 210px;
         top: -132px;
+    }
+
+    /* footer section */
+    .footer-section{
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+    .footer-title{
+        margin-top: 33px;
+        align-items: center;
+    }
+    .footer-title h1{
+        font-size: 22px;
+    }
+
+    .footer-description{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #footer-hr{
+        width:100%;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    } 
+    #copyright{
+        padding-bottom: 30px;
     }
 }
