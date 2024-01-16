@@ -406,6 +406,7 @@ hr{
     font-size: 64px;
     font-weight: 800;
     margin-bottom: 30px;
+    padding-top: 50px;
 }
 .extra-container{
     display: flex;
@@ -628,7 +629,6 @@ hr{
     #copyright{
         padding-bottom: 30px;
     }
-}
 
 /* extra section */
 .extra-section{
@@ -643,4 +643,5 @@ hr{
 }
 .extra-content{
     width: 75%;
+}
 }
